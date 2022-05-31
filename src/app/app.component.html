@@ -1,0 +1,15 @@
+<h1>WIZYTÓWKA</h1>
+<img
+  src="https://pbs.twimg.com/profile_images/593430376443445248/m99ZwQgD_400x400.jpg"
+  *ngIf="pokaz"
+/>
+<ul>
+  <h3>Dane:</h3>
+  <li>{{ imie }}</li>
+  <li>{{ nazwisko }}</li>
+  <li>{{ mail }}</li>
+  <li>{{ nrtel }}</li>
+  <h4>Adres:</h4>
+  <li *ngFor="let value of adres">{{ value }}</li>
+</ul>
+<br /><button (click)="(pokaz != pokaz)">Pokaż/Ukryj</button>
